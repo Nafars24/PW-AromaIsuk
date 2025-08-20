@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #443;
+    --main-color-hover: #665;
+    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: .2rem solid var(--main-color);
+    --border-hover: .2rem dashed var(--main-color);
+    --bg-color: #f9f9f9;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
+header {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .05rem var(--main-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 60rem;
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    border: var(--border);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form .box {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    background: none;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+form .box:focus {
+    border: var(--border-hover);
+    border-radius: var(--border-radius-hover);
+    background: rgba(240, 240, 240, 0.8);
+}
+
+form textarea {
+    width: 100%;
+    height: 15rem;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    background: none;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    outline: none;
+    resize: none;
+    transition: 0.3s ease;
+}
+
+form textarea:focus {
+    border: var(--border-hover);
+    border-radius: var(--border-radius-hover);
+    background: rgba(240, 240, 240, 0.8);
+}
+
+form .btn {
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--main-color);
+    background: none;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: 0.3s ease;
+    margin-top: 1rem;
+}
+
+form .btn:hover {
+    border: var(--border-hover);
+    border-radius: var(--border-radius-hover);
+}

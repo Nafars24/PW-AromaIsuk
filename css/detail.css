@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #443;
+    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: .2rem solid var(--main-color);
+    --border-hover: .2rem dashed var(--main-color);
+}
+
+.heading {
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .05rem var(--main-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+}
+
+.heading span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--main-color);
+    background: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    border-radius: var(--border-radius-hover);
+    border: var(--border-hover);
+}
+
+.menu-detail-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: var(--border-radius-hover);
+    padding: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-detail-box img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: var(--border-radius-hover);
+    border: var(--border);
+}
+
+.menu-detail-content {
+    max-width: 500px;
+    text-align: left;
+    color: var(--main-color);
+}
+
+.menu-detail-content h1 {
+    font-size: 2.4rem;
+    color: var(--main-color-hover);
+    margin-bottom: 1rem;
+}
+
+.menu-detail-content p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.menu-detail-content span {
+    font-size: 2rem;
+    color: var(--main-color-hover);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.menu-detail-content .btn {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--main-color);
+    background: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.menu-detail-content .btn:hover {
+    border-radius: var(--border-radius-hover);
+    border: var(--border-hover);
+}
+

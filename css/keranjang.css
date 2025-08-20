@@ -1,0 +1,61 @@
+/* Style Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #6F4E37; /* Warna cokelat kopi */
+    color: white;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+}
+
+.header .logo {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: #F0C27B; /* Warna emas */
+}
+
+.header .logo i {
+    margin-left: 8px;
+    color: #F0C27B;
+}
+
+/* Section Cart */
+.cart {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #F8EDE3; /* Warna beige lembut */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+.cart h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #6F4E37;
+}
+
+.cart h1 i {
+    margin-right: 10px;
+    color: #C19A6B;
+}
+
+.cart .empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #6F4E37;
+}
+
+/* Table Style */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
